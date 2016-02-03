@@ -1,0 +1,55 @@
+// Font weights
+$light: 300;
+$regular: 400;
+$semi-bold: 600;
+$bold: 700;
+
+//Font Family
+$font-stack: "Open Sans", sans-serif;
+
+// Font sizes
+$p-font-sizes: (
+  null  : 15px,
+  480px : 16px,
+  640px : 17px,
+  1024px: 19px
+);
+
+$h1-font-sizes: (
+  null  : 27px,
+  480px : 28px,
+  640px : 30px,
+  1024px: 32px
+);
+
+$h2-font-sizes: (
+  null  : 20px,
+  480px : 21px,
+  640px : 22px,
+  1024px: 24px
+);
+
+$h3-font-sizes: (
+  null  : 14px,
+  480px : 15px,
+  640px : 16px,
+  1024px: 18.72px
+);
+$h4-font-sizes: (
+  null  : 12px,
+  480px : 13px,
+  640px : 14px,
+  1024px: 16px
+);
+$h5-font-sizes: (
+  null  : 9px,
+  480px : 10px,
+  640px : 11px,
+  1024px: 13.28px
+);
+$h6-font-sizes: (
+  null  : 6px,
+  480px : 7px,
+  640px : 8px,
+  1024px: 10.72px
+);
