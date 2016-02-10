@@ -185,15 +185,108 @@ p {
   }
 }
 
+button {
+  background: none;
+  border: 0;
+  color: inherit;
+  /* cursor: default; */
+  font: inherit;
+  line-height: normal;
+  overflow: visible;
+  padding: 0;
+  -webkit-appearance: button;
+  /* for input */
+  -webkit-user-select: none;
+  /* for button */
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+button:focus {
+  outline: none;
+}
+
 .container {
   width: 100%;
   height: 100%;
 }
 .container section {
+  position: relative;
   width: 25%;
   background-color: #333;
   float: left;
   height: 100%;
+  background-size: cover;
+  background-position: top center;
+  overflow: hidden;
+}
+.container section.one {
+  background-image: url("../images/background-1.jpg");
+}
+.container section.two {
+  background-image: url("../images/background-2.jpg");
+}
+.container section.three {
+  background-image: url("../images/background-3.jpg");
+}
+.container section.four {
+  background-image: url("../images/background-4.jpg");
+}
+.container section.fourth .overlay {
+  position: absolute;
+  background-color: #000;
+  opacity: .3;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all .4s ease-in-out;
+  -moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+.container section.fourth .button {
+  position: relative;
+  display: block;
+  top: 60%;
+  color: #fff;
+  margin: 0 auto;
+  padding: 10px 20px;
+  font-weight: 700;
+  border: 3px solid #fff;
+  border-radius: 25px;
+  opacity: 0;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+.container section.fourth .button:hover {
+  color: #525252;
+  background-color: #fff;
+}
+.container section h1 {
+  position: relative;
+  color: #fff;
+  display: block;
+  text-align: center;
+  top: 56%;
+  margin-bottom: 20px;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+.container section:hover h1 {
+  top: 45%;
+}
+.container section:hover .button {
+  opacity: 1;
+  top: 45%;
+}
+.container section:hover .overlay {
+  margin-top: 5%;
+  height: 96%;
+  width: 90%;
+  opacity: .7;
+  margin-left: 5%;
 }
 
 /*# sourceMappingURL=styles.css.map */
